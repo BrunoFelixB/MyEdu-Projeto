@@ -39,6 +39,22 @@ body {
     align-items: center;
 }
 
+/* #text-buscar {
+    padding: 30px 20px 30px 20px;
+    text-align: center;
+    width: 100px;
+    transition: .5s background-color ease;
+    -webkit-transition: .5s background-color;
+    -moz-transition: .5s background-color;
+} */
+
+/* expandindo caixa de Busca */
+
+/* #text-buscar.expandida {
+    width: 400px;
+    text-align: right;
+} */
+
 .text-menu {
     padding: 30px 20px 30px 20px;
     text-align: center;
