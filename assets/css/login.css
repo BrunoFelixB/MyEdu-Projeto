@@ -3,26 +3,32 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    min-height: 100vh;
     font-family: 'Merriweather Sans', sans-serif;
     box-sizing: border-box;
 }
 .container{
-    display: flex;
-    align-items: center;
-    height: 100vh;
+display: flex;
+flex-wrap: wrap;
+height: 100vh;
+
 }
 .left{
-    flex-basis: 60%;
+    flex-basis: calc(50% - 20px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left .headline{
+    width: 100%;
     max-width: 600px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 .left .headline  h1{
     font-size: 3rem;
     margin-bottom:10px;
     background: -webkit-linear-gradient(45deg, #6F04D9, #0597F2,#05C7F2 );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
 }
@@ -36,6 +42,8 @@ body {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 600px;
 }
 .left form input{
     margin: 10px 0;
@@ -60,18 +68,43 @@ form input[type="submit"]:hover{
 form a{
     text-decoration: none;
     background: -webkit-linear-gradient(45deg, #6F04D9, #0597F2,#05C7F2 );
+    background-clip:text ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .right{
-    position: relative;
-    flex-basis: 40%;
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 50%;
     background: -webkit-linear-gradient(45deg, #6F04D9, #0597F2,#05C7F2 );
-    height: 100%;
 }
 .right img{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    max-width: 100%;
     margin-left:-140px ;
+}
+
+@media (max-width:1290px){
+    .right img{
+        margin-left: 0px;
+    }
+}
+@media (max-width:768px){
+    .left{
+        flex-basis: 100%;
+        text-align: center;
+        padding-bottom:30px ;
+    }
+   .right{
+       padding-top:30px ;
+       flex-basis: 100%;
+   }
+}
+@media (max-width:768px){
+    .left{
+        padding: 0 20px 30px 20px;
+    }
+    .left .headline p,
+    form a{
+        font-size: 0.9rem;
+    }
 }
