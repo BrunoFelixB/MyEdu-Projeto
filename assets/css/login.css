@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+display: flex;
+flex-wrap: wrap;
+height: 100vh;
+
+}
+.left{
+    flex-basis: calc(50% - 20px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left .headline{
+    width: 100%;
+    max-width: 600px;
+}
+.left .headline  h1{
+    font-size: 3rem;
+    margin-bottom:10px;
+    background: -webkit-linear-gradient(45deg, #6F04D9, #0597F2,#05C7F2 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+.left .headline p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+    color: #1c1c1c;
+}
+.left form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+.left form input{
+    margin: 10px 0;
+    padding: 20px 15px;
+    font-size: 1rem;
+    border-radius:5px;
+    border:none;
+    outline: none;
+    background-color:#efefef;
+}
+form input[type="submit"]{
+    background: linear-gradient(45deg, #6F04D9, #0597F2,#05C7F2 );
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+form input[type="submit"]:hover{
+    background: linear-gradient(45deg, #6F04D9, #6F04D9,#6F04D9 );
+}
+form a{
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, #6F04D9, #0597F2,#05C7F2 );
+    background-clip:text ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.right{
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 50%;
+    background: -webkit-linear-gradient(45deg, #6F04D9, #0597F2,#05C7F2 );
+}
+.right img{
+    max-width: 100%;
+    margin-left:-140px ;
+}
+
+@media (max-width:1290px){
+    .right img{
+        margin-left: 0px;
+    }
+}
+@media (max-width:768px){
+    .left{
+        flex-basis: 100%;
+        text-align: center;
+        padding-bottom:30px ;
+    }
+   .right{
+       padding-top:30px ;
+       flex-basis: 100%;
+   }
+}
+@media (max-width:768px){
+    .left{
+        padding: 0 20px 30px 20px;
+    }
+    .left .headline p,
+    form a{
+        font-size: 0.9rem;
+    }
+}
