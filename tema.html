@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="h-100">
 
 <head>
     <meta charset="UTF-8">
@@ -12,11 +12,12 @@
     <title>Tema</title>
 </head>
 
-<body class="d-flex flex-column justify-content-between">
+<body class="d-flex flex-column h-100" cz-shortcut-listen="true">
+    
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-body shadow">
             <div class="container">
-                <a class="navbar-brand fw-bold border border-light border-2 px-2 py-2" href="#">MyEdy</a>
+                <a class="text-primary fs-3 navbar-brand fw-bold border border-4 border-primary px-2" href="#">MyEdy</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,15 +25,16 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Ínicio </a>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Avaliações</a>
-                        </li>
+                            <a class="nav-link active" aria-current="page" href="dashboard.html">Ínicio </a>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="avaliacoes.html">Avaliações</a>
+                            </li>
                     </ul>
 
 
                     <div class="dropdown">
-                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" class="text-decoration-none">
+                            <span class="text-dark">Fulano de Tal</span>
                             <img src="assets/images/imagem-perfil.png" class="imagem--perfil rounded-circle"
                                 alt="imagem de perfil">
                         </a>
@@ -47,11 +49,17 @@
         </nav>
     </header>
 
-    <main>
-        <div class=" card--disciplina container">
-            <h1 class="headline my-3 fw-bold text-primary fs-3">Banco de Dados</h1>
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
+    <main class="main d-flex align-items-center justify-content-center">
+        <div class="card--disciplina container d-flex flex-column justify-content-start">
+            <div class="d-flex  flex-row justify-content-between align-items-center">
+                <h1 class="headline my-5 fw-bold text-primary fs-3">Disciplinas</h1>
+                <button class="btn btn-primary d-lg-none btn-sm" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                    aria-controls="offcanvasScrolling">Acessar Temas</button>
+            </div>
+
+            <div class="row ">
+                <div class="col-lg-5 col-md-12 d-sm-none d-md-none d-lg-block  ">
                     <div class=" tema--list overflow-auto list-group list-group-flush border-0">
                         <a href="#" class="tema--item list-group-item list-group-item-action py-3 border-1   active"
                             aria-current="true">
@@ -76,7 +84,8 @@
                             <div class="col-10 mb-1 small">Projeto de Banco de Dados: Modelagem Lógica e Física.</div>
                         </a>
 
-                        <a href="#" class="tema--item list-group-item list-group-item-action py-3 lh-tight border-1  " aria-current="true">
+                        <a href="#" class="tema--item list-group-item list-group-item-action py-3 lh-tight border-1  "
+                            aria-current="true">
                             <div class="d-flex w-100 align-items-center justify-content-between">
                                 <strong class="mb-1">Tema4</strong>
                                 <small class="text-muted"><i class="bi bi-check-circle-fill"></i></small>
@@ -106,18 +115,92 @@
                             <div class="col-10 mb-1 small">Consultas em uma tabéla no Postgresql</div>
                         </a>
                     </div>
-                    
+                </div>
+
+                <div class="d-sm-block d-md-block d-lg-none">
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+
+                        </div>
+                        <div class="offcanvas-body">
+                            <a href="#" class="tema--item list-group-item list-group-item-action py-3 border-1   active"
+                                aria-current="true">
+                                <div class="d-flex w-100 align-items-center justify-content-between ">
+                                    <strong class="mb-1">Tema 1</strong>
+                                    <small><i class="bi bi-check-circle-fill"></i></small>
+                                </div>
+                                <div class="col-10 mb-1 small">Sistemas de banco de dados.</div>
+                            </a>
+                            <a href="#"
+                                class="tema--item list-group-item list-group-item-action py-3 lh-tight border-1  ">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Tema 2</strong>
+                                    <small class="text-muted"><i class="bi bi-check-circle-fill"></i></small>
+                                </div>
+                                <div class="col-10 mb-1 small">Projeto de Banco de Dados: Modelagem Conceitual.</div>
+                            </a>
+                            <a href="#"
+                                class="tema--item list-group-item list-group-item-action py-3 lh-tight border-1  ">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Tema 3</strong>
+                                    <small class="text-muted"><i class="bi bi-check-circle-fill"></i></small>
+                                </div>
+                                <div class="col-10 mb-1 small">Projeto de Banco de Dados: Modelagem Lógica e Física.
+                                </div>
+                            </a>
+
+                            <a href="#"
+                                class="tema--item list-group-item list-group-item-action py-3 lh-tight border-1  "
+                                aria-current="true">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Tema4</strong>
+                                    <small class="text-muted"><i class="bi bi-check-circle-fill"></i></small>
+                                </div>
+                                <div class="col-10 mb-1 small">Sistema de Banco de dados.</div>
+                            </a>
+                            <a href="#"
+                                class="tema--item list-group-item list-group-item-action py-3 lh-tight border-1 ">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Tema 5</strong>
+                                    <small class="text-muted"><i class="bi bi-check-circle-fill"></i></small>
+                                </div>
+                                <div class="col-10 mb-1 small">Criação e manipulação de objetos no Postgresql.</div>
+                            </a>
+                            <a href="#"
+                                class="tema--item list-group-item list-group-item-action py-3 lh-tight border-1  ">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Tema 6</strong>
+                                    <small class="text-muted"><i class="bi bi-check-circle-fill"></i></small>
+                                </div>
+                                <div class="col-10 mb-1 small">Consultas em uma tabéla no Postgresql</div>
+                            </a>
+
+                            <a href="#"
+                                class="tema--item list-group-item list-group-item-action py-3 lh-tight border-1 ">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Tema 6</strong>
+                                    <small class="text-muted"><i class="bi bi-check-circle-fill"></i></small>
+                                </div>
+                                <div class="col-10 mb-1 small">Consultas em uma tabéla no Postgresql</div>
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="col-lg-8 col-md-12">
+
+                <div class="col-lg-7 col-md-12">
                     <div class="ratio ratio-16x9">
                         <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"
                             allowfullscreen></iframe>
                     </div>
                     <div class="m-2">
-                        <p class="text--small text-muted "><a href="" class="text-decoration-none"><i class="bi bi-file-earmark-pdf-fill"></i> Conteúdo Complementar </a></p>
+                        <p class="text--small text-muted "><a href="" class="text-decoration-none"><i
+                                    class="bi bi-file-earmark-pdf-fill"></i> Conteúdo Complementar </a></p>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -125,14 +208,13 @@
     </main>
 
 
-    <div class="bg-dark text-light">
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2 ">
-                <p class=" text-small col-md-6 mb-0">MyEdu © Todos os Direitos Reservados</p>
 
-            </footer>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-dark">MyEdu © Todos os Direitos Reservados</span>
         </div>
-    </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -140,6 +222,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>
