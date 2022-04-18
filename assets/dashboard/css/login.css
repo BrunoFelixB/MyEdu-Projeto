@@ -6,11 +6,11 @@ body {
     font-family: 'Merriweather Sans', sans-serif;
     box-sizing: border-box;
 }
-.container{
-display: flex;
-flex-wrap: wrap;
-height: 100vh;
 
+.container{
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
 }
 .left{
     flex-basis: calc(50% - 20px);
@@ -20,6 +20,14 @@ height: 100vh;
     justify-content: center;
     align-items: center;
 }
+.btn-back{
+    border: none;
+    background-color: transparent;
+}
+.btn-back svg{
+    color: #6F04D9;
+}
+
 .left .headline{
     width: 100%;
     max-width: 600px;
@@ -74,13 +82,15 @@ form a{
 }
 .right{
     display: flex;
-    align-items: flex-end;
+    align-items: end;
+    justify-content: center;
+    height: 100%;
     flex-basis: 50%;
     background: -webkit-linear-gradient(45deg, #6F04D9, #0597F2,#05C7F2 );
 }
 .right img{
+    max-height: 100%; 
     max-width: 100%;
-    margin-left:-140px ;
 }
 
 @media (max-width:1290px){
