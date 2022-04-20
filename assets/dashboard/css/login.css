@@ -23,6 +23,10 @@ body {
 .btn-back{
     border: none;
     background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
 }
 .btn-back svg{
     color: #6F04D9;
@@ -107,6 +111,7 @@ form a{
    .right{
        padding-top:30px ;
        flex-basis: 100%;
+       display: none;
    }
 }
 @media (max-width:768px){
