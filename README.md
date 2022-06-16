@@ -11,7 +11,7 @@ Foi desenvolvido em parceria com o Jande Masmo (https://github.com/jandemasmo).
 
 O projeto consiste em desenvolver uma plataforma educacional. 
 
-Você pode verificar clicando [contributor guide index](https://github.com/Azure/azure-content/blob/master/contributor-guide/contributor-guide-index.md)
+Você pode verificar clicando [aqui](https://brunofelixb.github.io/myedu/)
 
 ## Autores
 
