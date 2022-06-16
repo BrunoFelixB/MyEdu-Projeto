@@ -15,5 +15,5 @@ Você pode verificar clicando https://img.shields.io/static/v1?label=<LABEL>&mes
 
 ## Autores
 
-| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Bruno Félix</sub>](https://github.com/BrunoFelixB) |  [<img src="https://avatars.githubusercontent.com/u/30351153?v=4" width=115><br><sub>Jande Masmo</sub>](https://github.com/jandemasmo) |
+| [<img src="https://avatars.githubusercontent.com/u/99702963?v=4" width=115><br><sub>Bruno Félix</sub>](https://github.com/BrunoFelixB) |  [<img src="https://avatars.githubusercontent.com/u/48549732?v=4" width=115><br><sub>Jande Masmo</sub>](https://github.com/jandemasmo) |
 | :---: | :---: |
