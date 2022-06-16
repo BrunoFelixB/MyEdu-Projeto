@@ -7,11 +7,11 @@
 
 ## Sobre o projeto
 
-Foi desenvolvido em parceria com o Jande Masmo (https://github.com/jandemasmo). 
+Foi desenvolvido em parceria com o [Jande Masmo](https://github.com/jandemasmo).
 
 O projeto consiste em desenvolver uma plataforma educacional. 
 
-Você pode verificar clicando [aqui](https://brunofelixb.github.io/myedu/)
+Você pode verificar clicando [aqui](https://brunofelixb.github.io/projeto-site-myedu/)
 
 ## Autores
 
